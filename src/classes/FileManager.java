@@ -27,7 +27,7 @@ public class FileManager {
     public void readContentFromFileByOs() {
         FileChooser fileChooser = new FileChooser();
 
-        //Set extension filter
+        //Set extension filter![](../../../../../../Users/joaom/Desktop/Glass Moon Notepad/IconPNG.png)
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Text File (*.txt)", "*.txt");
         fileChooser.getExtensionFilters().add(extFilter);
 

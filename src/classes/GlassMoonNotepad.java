@@ -16,7 +16,7 @@ public class GlassMoonNotepad extends Application implements Runnable {
 
     private static Thread autoScalingElement;
 
-    private static Image image = new Image("Icon.png");
+    private static Image image = new Image("IconPNG.png");
     public static Image getImage() {return image;}
 
     private static double wSize = 700; // size of window as square
