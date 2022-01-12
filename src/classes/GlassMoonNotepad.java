@@ -109,7 +109,6 @@ public class GlassMoonNotepad extends Application implements Runnable {
         rootPane.getChildren().add(mainLayout);
     }
 
-
     public static MendesTextArea getMendesTextArea() {
         return mendesTextArea;
     }

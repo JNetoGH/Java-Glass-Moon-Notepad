@@ -30,6 +30,8 @@ public class CustomThemeSetters {
             LateralMenuBar.frameButtons[i].setStyle("-fx-text-fill: white; -fx-background-color: transparent;");
         }
 
+        // checkbox
+        LateralMenuBar.wrapText.setStyle("-fx-text-fill: white");
 
     }
 }

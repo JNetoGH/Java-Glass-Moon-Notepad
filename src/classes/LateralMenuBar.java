@@ -24,10 +24,12 @@ public class LateralMenuBar {
     private static Dimension2D elementsDimensions = new Dimension2D(100,50);
 
     public static Slider fontSlider = new Slider(10,50,5);
+    public static CheckBox wrapText = new CheckBox("wrap text");
 
     public static Button[] frameButtons = {new Button("-"), new Button("❐"), new Button("x")};
     public static Button[] utilityButtons = {new Button("Glass"), new Button("Open"), new Button("Save")};
-    public static boolean isGlassed = false, isMaximized = false;
+    public static boolean isGlassed = false;
+    public static boolean isMaximized = false;
 
     public LateralMenuBar(String color) throws FileNotFoundException {
         // GENERAL SETTINGS
@@ -36,8 +38,9 @@ public class LateralMenuBar {
         LateralMenuBar.lateralBarLayout.setPrefWidth(width);
         LateralMenuBar.lateralBarLayout.setMaxWidth(width);
         LateralMenuBar.lateralBarLayout.setMinWidth(width);
-        LateralMenuBar.lateralBarLayout.setSpacing(GlassMoonNotepad.padding);
+        LateralMenuBar.lateralBarLayout.setSpacing(GlassMoonNotepad.padding-5);
         LateralMenuBar.lateralBarLayout.setAlignment(Pos.TOP_CENTER);
+
 
         // ADDING FRAME BUTTONS
         HBox frameButtonsLayout = new HBox();
@@ -87,6 +90,19 @@ public class LateralMenuBar {
             }
         });
         LateralMenuBar.lateralBarLayout.getChildren().add(fontSlider);
+
+
+        // ADDING WRAP TEXT FEATURE
+        wrapText.setOnAction(new EventHandler<ActionEvent>() { // wraps the text if the checkbox is assigned
+                @Override
+                public void handle(ActionEvent event) {
+                    GlassMoonNotepad.getMendesTextArea().getTxtArea().setWrapText(wrapText.isSelected());
+                }
+            }
+        );
+
+
+        LateralMenuBar.lateralBarLayout.getChildren().add(wrapText);
 
         // ADDING UTILITY BUTTONS AND ITS EVENTS
         for (int i = 0; i < LateralMenuBar.utilityButtons.length; i++) {
