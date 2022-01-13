@@ -125,6 +125,7 @@ public class LateralMenuBar {
                             }
                             break;
                     }
+                    LateralMenuBar.frameButtons[0].requestFocus(); // tira o foco do botao dps de pressionado e passa pro de - já que ele n tem animação para foco, apenas quando o mouse passa em cima, sim é uma gambiarra ferrada
                 }
             });
         }
