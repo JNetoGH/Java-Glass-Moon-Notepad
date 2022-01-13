@@ -1,20 +1,21 @@
 * {
     -fx-border-color: transparent;
     -fx-focus-color: transparent;
+    -fx-text-fill: rgb(230,230,230);
 }
 
 .slider {
     -fx-control-inner-background: #282828;
+    -fx-progress-color: black;
 }
+
 
 .text-area {
     -fx-control-inner-background: #282828;
-    -fx-text-fill: rgb(230,230,230);
     -fx-text-box-border: #282828;
     -fx-focus-color: transparent;
     -fx-faint-focus-color: #282828;
     -fx-background-color: #282828;
-    -fx-border-color: #282828;
     -fx-color-label-visible: #282828;
     -fx-progress-color: #282828;
 }

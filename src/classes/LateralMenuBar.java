@@ -41,7 +41,6 @@ public class LateralMenuBar {
         LateralMenuBar.lateralBarLayout.setSpacing(GlassMoonNotepad.padding-5);
         LateralMenuBar.lateralBarLayout.setAlignment(Pos.TOP_CENTER);
 
-
         // ADDING FRAME BUTTONS
         HBox frameButtonsLayout = new HBox();
         frameButtonsLayout.setAlignment(Pos.CENTER);
@@ -90,7 +89,6 @@ public class LateralMenuBar {
             }
         });
         LateralMenuBar.lateralBarLayout.getChildren().add(fontSlider);
-
 
         // ADDING WRAP TEXT FEATURE
         wrapText.setOnAction(new EventHandler<ActionEvent>() { // wraps the text if the checkbox is assigned

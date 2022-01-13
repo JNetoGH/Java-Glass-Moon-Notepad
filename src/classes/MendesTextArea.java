@@ -18,6 +18,8 @@ public class MendesTextArea {
     private double dx;
     private double dy;
 
+    public static Label label = new Label("DRAG TO RESIZE ⇲");
+
     public MendesTextArea() {
         layout.setAlignment(Pos.BOTTOM_RIGHT);
         layout.setPadding(new Insets(0, GlassMoonNotepad.padding,0, 0));
@@ -25,9 +27,7 @@ public class MendesTextArea {
         initResizeLabel();
     }
 
-
     private void initResizeLabel() {
-        Label label = new Label("DRAG TO RESIZE ⇲");
         label.setFont(new Font(25));
         layout.getChildren().add(label);
 
