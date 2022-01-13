@@ -6,7 +6,16 @@
 
 .slider {
     -fx-control-inner-background: #282828;
-    -fx-progress-color: black;
+    -fx-progress-color: #282828;
+}
+
+.check-box .box {
+    -fx-background-color:  #282828;
+    -fx-border-color:grey;
+    -fx-border-radius:3px;
+}
+.check-box:selected .mark {
+    -fx-background-color: white;
 }
 
 

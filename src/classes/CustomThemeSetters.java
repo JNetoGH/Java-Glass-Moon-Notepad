@@ -9,7 +9,6 @@ public class CustomThemeSetters {
         LateralMenuBar.fontSlider.setStyle("-fx-font-size: 15px; -fx-background-color: transparent;");
         GlassMoonNotepad.lateralMenuBar.setBarColor("#373737");
         MendesTextArea.label.setStyle("-fx-text-fill: grey");
-
         LateralMenuBar.lateralBarLayout.setStyle("-fx-background-color: #090a0c," +
                 "linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%), linear-gradient(#20262b, #191d22);");
 
