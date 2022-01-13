@@ -4,11 +4,13 @@ public class CustomThemeSetters {
 
     // THEME STYLE SETTER METHODS
     public static void setToNoirTheme() {
+        /*
         GlassMoonNotepad.getMendesTextArea().getTxtArea().setStyle(
                 "-fx-control-inner-background: #282828; -fx-text-fill: rgb(230,230,230); " +
                 "-fx-text-box-border: #282828; -fx-focus-color: #282828; -fx-faint-focus-color: #282828;" +
                 "-fx-background-color: #282828; -fx-border-color: #282828; -fx-color-label-visible: #282828; " +
                 "-fx-progress-color: #282828;");
+        */
 
         GlassMoonNotepad.getMendesTextArea().getLayout().setStyle("-fx-text-fill: white; -fx-background-color: #282828");
 

@@ -62,9 +62,12 @@ public class GlassMoonNotepad extends Application implements Runnable {
 
         // INITIALIZING FEATURES FOR CUSTOM SETTINGS
         CustomThemeSetters.setToNoirTheme();
+        mendesTextArea.getTxtArea().setId("#mendesTextArea");
 
-        // atribui o estilo as barras
+
+        // atribui o estilo as barras e a area de texto
         scene.getStylesheets().add("ScrollBarStyle.css");
+        scene.getStylesheets().add("TextAreaStyle.css");
 
         // makes the focus "which element will be used" by default in the text are
         mendesTextArea.getTxtArea().requestFocus();
